@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Muhammad Umar Muavia | Ruby on Rails Developer</title>
 <meta name="description" content="Ruby on Rails developer and full-stack software engineer. Backend development, PostgreSQL, API integration and production support.">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -37,7 +40,7 @@ header.scrolled{border-color:var(--rule)}
 header.away{transform:translateY(-100%)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:600;letter-spacing:-.01em}
-.mono-mark{width:34px;height:34px;border-radius:10px;background:var(--ink);color:var(--bg);display:grid;place-items:center;font:400 20px/1 var(--serif)}
+.logo-mark{width:34px;height:34px;border-radius:10px;object-fit:cover;object-position:center 18%;border:1px solid var(--rule);background:var(--surface);flex:none;display:block}
 .links{display:flex;gap:6px;align-items:center}
 .links a.lnk{padding:8px 14px;border-radius:999px;text-decoration:none;font-size:15px;color:var(--muted);transition:color .2s,background .2s}
 .links a.lnk:hover,.links a.lnk.on{color:var(--ink);background:var(--surface)}
@@ -107,8 +110,8 @@ h2{font:400 clamp(38px,5vw,60px)/1.02 var(--serif);letter-spacing:-.015em;margin
 .about{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px;align-items:start}
 .portrait{aspect-ratio:4/5;border-radius:24px;background:var(--surface);border:1px solid var(--rule);display:grid;place-items:center;position:relative;overflow:hidden}
 .portrait::before{content:"";position:absolute;inset:0;background:radial-gradient(70% 60% at 30% 20%,var(--glow),transparent)}
-.portrait b{position:relative;font:400 clamp(120px,16vw,190px)/1 var(--serif);color:var(--accent)}
-.portrait small{position:absolute;left:20px;bottom:18px;right:20px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;gap:10px}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:center 12%;position:absolute;inset:0;z-index:1}
+.portrait small{position:absolute;left:20px;bottom:18px;right:20px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;gap:10px;z-index:2;padding:10px 12px;border-radius:12px;background:color-mix(in srgb,var(--surface) 88%,transparent);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border:1px solid var(--rule)}
 .about p{margin:0 0 18px;font-size:18px}
 .about p.big{font:400 clamp(26px,3vw,34px)/1.25 var(--serif);margin-bottom:24px}
 .facts{display:grid;grid-template-columns:repeat(2,1fr);gap:0 28px;margin:30px 0 0;padding:0;list-style:none}
@@ -277,7 +280,7 @@ footer{padding:36px 0 48px;color:var(--muted);font-size:15px;display:flex;justif
 
 <header id="hd">
   <div class="wrap nav">
-    <a class="logo" href="#top" aria-label="Muhammad Umar Muavia, home"><span class="mono-mark" aria-hidden="true">U</span><span>Muhammad Umar</span></a>
+    <a class="logo" href="#top" aria-label="Muhammad Umar Muavia, home"><img class="logo-mark" src="assets/profile-avatar.png" width="34" height="34" alt=""><span>Muhammad Umar</span></a>
     <nav class="links" id="links" aria-label="Main">
       <a class="lnk" href="#about">About</a>
       <a class="lnk" href="#work">Work</a>
@@ -337,8 +340,8 @@ footer{padding:36px 0 48px;color:var(--muted);font-size:15px;display:flex;justif
 <!-- 2. ABOUT -->
 <section id="about" aria-labelledby="about-h">
   <div class="wrap about">
-    <div class="portrait reveal" role="img" aria-label="Monogram: M U">
-      <b aria-hidden="true">MU</b>
+    <div class="portrait reveal">
+      <img src="assets/profile.png" width="800" height="1000" alt="Muhammad Umar Muavia">
       <small><span>Punjab, Pakistan</span><span>UTC+5</span></small>
     </div>
     <div class="reveal">
