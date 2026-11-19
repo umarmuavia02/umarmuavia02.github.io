@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Umar Muavia · Ruby on Rails Engineer</title>
+    <meta
+      name="description"
+      content="Muhammad Umar Muavia is a Ruby on Rails engineer specialising in PostgreSQL search, database performance, Sidekiq background jobs, deployment and clear client communication."
+    />
+    <meta name="theme-color" content="#f6f3ee" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Muhammad Umar Muavia · Ruby on Rails Engineer" />
+    <meta
+      property="og:description"
+      content="Search, PostgreSQL, Sidekiq and deployment for production Rails apps. Based in Pakistan, working with international clients."
+    />
+    <meta property="og:image" content="assets/img/lexiqamus-results.webp" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <nav class="nav container" aria-label="Primary">
+        <a class="wordmark" href="#top" aria-label="Umar Muavia, home">
+          <span class="wordmark-mark" aria-hidden="true">UM</span>
+          <span>Umar Muavia</span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="sr-only">Menu</span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a class="btn btn-small btn-primary" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">
+              <span class="eyebrow-dot" aria-hidden="true"></span>
+              Ruby on Rails engineer · Pakistan (UTC+5)
+            </p>
+            <h1>
+              Rails backends where <em>search</em> and data have to be right.
+            </h1>
+            <p class="lead">
+              I build and maintain production web applications with Ruby on
+              Rails and PostgreSQL. My focus is the backend: search, database
+              performance, background jobs and API integrations. I take features
+              from requirements to deployment and keep international clients
+              updated along the way.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact">
+                Start a conversation
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+              </a>
+              <a class="btn btn-ghost" href="#work">See my work</a>
+            </div>
+            <dl class="facts">
+              <div>
+                <dt>Role</dt>
+                <dd>Software Engineer, EvolvingBits</dd>
+              </div>
+              <div>
+                <dt>Since</dt>
+                <dd>May 2024</dd>
+              </div>
+              <div>
+                <dt>Works with</dt>
+                <dd>International clients</dd>
+              </div>
+            </dl>
+          </div>
+
+          <figure class="hero-shot">
+            <div class="browser">
+              <div class="browser-bar" aria-hidden="true">
+                <span></span><span></span><span></span>
+                <em>lexiqamus.com</em>
+              </div>
+              <img
+                src="assets/img/lexiqamus-results.webp"
+                alt="LexiQamus search results page for the word meyve, listing headword matches across several Ottoman Turkish dictionaries."
+                width="1440"
+                height="1100"
+                fetchpriority="high"
+              />
+            </div>
+            <figcaption>
+              Live search results on LexiQamus, over dictionaries digitized with
+              BuildLQ.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- STACK STRIP -->
+      <section class="strip" aria-label="Core technologies">
+        <div class="container">
+          <ul class="strip-list">
+            <li>Ruby on Rails</li>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>Sidekiq</li>
+            <li>Bootstrap</li>
+            <li>JavaScript</li>
+            <li>Nginx · Passenger</li>
+            <li>DigitalOcean</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- WORK -->
+      <section class="section" id="work">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="kicker">Selected work</p>
+            <h2>Two production platforms, one dictionary ecosystem.</h2>
+            <p class="section-intro">
+              BuildLQ digitizes historical dictionaries and indexes them for
+              search. LexiQamus is the public product that scholars and
+              universities use to search them. I work on both sides.
+            </p>
+          </header>
+
+          <!-- BuildLQ -->
+          <article class="case reveal" aria-labelledby="case-buildlq">
+            <div class="case-copy">
+              <p class="case-meta">
+                <span class="tag">Rails</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Sidekiq</span>
+                <span class="tag">JavaScript</span>
+              </p>
+              <h3 id="case-buildlq">BuildLQ</h3>
+              <p class="case-sub">
+                Dictionary digitization and search platform
+              </p>
+              <p>
+                The system behind LexiQamus's data: dictionary pages are
+                digitized, structured and made searchable. I build its search
+                features and backend, and I support its production and staging
+                environments.
+              </p>
+              <ul class="check-list">
+                <li>
+                  Search with text normalization and PostgreSQL trigram matching
+                  over large datasets.
+                </li>
+                <li>
+                  Improved matching quality and query performance so the right
+                  headword surfaces first.
+                </li>
+                <li>
+                  Background jobs with Sidekiq and data sync with LexiQamus.
+                </li>
+                <li>
+                  Production and staging support, from deployment to day-to-day
+                  fixes.
+                </li>
+              </ul>
+              <p class="case-link">
+                <a href="https://www.lexiqamus.com" target="_blank" rel="noopener">
+                  See it in use on lexiqamus.com
+                  <span class="sr-only">(opens in a new tab)</span>
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg>
+                </a>
+              </p>
+            </div>
+            <figure class="case-shot">
+              <div class="browser">
+                <div class="browser-bar" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                  <em>Search results</em>
+                </div>
+                <img
+                  src="assets/img/lexiqamus-results-detail.webp"
+                  alt="Close-up of search results grouped by lemma, with headword, category, and the source dictionary and page for each match."
+                  width="1252"
+                  height="770"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption>
+                Results grouped by lemma, each linked to its dictionary and page.
+              </figcaption>
+            </figure>
+          </article>
+
+          <!-- LexiQamus -->
+          <article class="case case-flip reveal" aria-labelledby="case-lexiqamus">
+            <div class="case-copy">
+              <p class="case-meta">
+                <span class="tag">MySQL</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Authentication</span>
+                <span class="tag">Subscriptions</span>
+              </p>
+              <h3 id="case-lexiqamus">LexiQamus</h3>
+              <p class="case-sub">Digital dictionary platform</p>
+              <p>
+                An Ottoman Turkish linguistic analysis tool used by researchers,
+                students and libraries. I work on who can sign in, what each
+                account can see, and how the data stays in step with BuildLQ.
+              </p>
+              <ul class="check-list">
+                <li>Authentication and account flows.</li>
+                <li>
+                  Institutional access for universities and libraries, plus
+                  subscriptions.
+                </li>
+                <li>Data sync with BuildLQ across two databases.</li>
+              </ul>
+              <p class="case-link">
+                <a href="https://www.lexiqamus.com" target="_blank" rel="noopener">
+                  Visit lexiqamus.com
+                  <span class="sr-only">(opens in a new tab)</span>
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg>
+                </a>
+              </p>
+            </div>
+
+            <div class="case-shot">
+              <div class="gallery" data-tabs>
+                <div class="gallery-tabs" role="tablist" aria-label="LexiQamus screens">
+                  <button class="gallery-tab" role="tab" id="tab-home" aria-controls="panel-home" aria-selected="true" type="button">Home</button>
+                  <button class="gallery-tab" role="tab" id="tab-access" aria-controls="panel-access" aria-selected="false" tabindex="-1" type="button">Access</button>
+                  <button class="gallery-tab" role="tab" id="tab-mobile" aria-controls="panel-mobile" aria-selected="false" tabindex="-1" type="button">Mobile</button>
+                </div>
+
+                <div class="gallery-panel" role="tabpanel" id="panel-home" aria-labelledby="tab-home">
+                  <div class="browser">
+                    <div class="browser-bar" aria-hidden="true">
+                      <span></span><span></span><span></span>
+                      <em>lexiqamus.com</em>
+                    </div>
+                    <img
+                      src="assets/img/lexiqamus-home.webp"
+                      alt="LexiQamus home page with the Latin and Ottoman search box, dictionary selector and a banner for free university access."
+                      width="1440"
+                      height="900"
+                      loading="lazy"
+                    />
+                  </div>
+                  <p class="shot-caption">
+                    Bilingual search home with a university-access announcement.
+                  </p>
+                </div>
+
+                <div class="gallery-panel" role="tabpanel" id="panel-access" aria-labelledby="tab-access" hidden>
+                  <div class="browser">
+                    <div class="browser-bar" aria-hidden="true">
+                      <span></span><span></span><span></span>
+                      <em>Visitor access</em>
+                    </div>
+                    <img
+                      src="assets/img/lexiqamus-access.webp"
+                      alt="A search result page blurred behind a prompt inviting visitors to create a free account with a university email."
+                      width="1440"
+                      height="1000"
+                      loading="lazy"
+                    />
+                  </div>
+                  <p class="shot-caption">
+                    Access prompt for visitors, with a university-email route.
+                  </p>
+                </div>
+
+                <div class="gallery-panel" role="tabpanel" id="panel-mobile" aria-labelledby="tab-mobile" hidden>
+                  <div class="phone">
+                    <img
+                      src="assets/img/lexiqamus-mobile.webp"
+                      alt="LexiQamus on a phone-sized screen, with the search form stacked above the results."
+                      width="390"
+                      height="844"
+                      loading="lazy"
+                    />
+                  </div>
+                  <p class="shot-caption">The same search on a 390px screen.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section section-tint" id="skills">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="kicker">What I do</p>
+            <h2>Skills I use on real projects.</h2>
+            <p class="section-intro">
+              Backend first, with enough frontend and operations experience to
+              ship a feature end to end.
+            </p>
+          </header>
+
+          <div class="skill-grid">
+            <article class="skill reveal">
+              <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+              <h3>Search optimization</h3>
+              <p>
+                Dictionary search with text normalization and PostgreSQL
+                trigram matching over large datasets, tuned for result quality
+                and speed.
+              </p>
+              <ul class="skill-tags"><li>pg_trgm</li><li>Normalization</li><li>Relevance</li></ul>
+            </article>
+
+            <article class="skill reveal">
+              <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3" /><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6" /></svg>
+              <h3>Database handling</h3>
+              <p>
+                Schema design and optimization in PostgreSQL and MySQL, plus
+                keeping data in sync between separate applications.
+              </p>
+              <ul class="skill-tags"><li>PostgreSQL</li><li>MySQL</li><li>Data sync</li></ul>
+            </article>
+
+            <article class="skill reveal">
+              <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h6" /><path d="m16 15 2 2 4-4" /></svg>
+              <h3>Background jobs &amp; APIs</h3>
+              <p>
+                Sidekiq workers for long-running tasks, REST APIs, and
+                third-party service integrations that fail gracefully.
+              </p>
+              <ul class="skill-tags"><li>Sidekiq</li><li>REST APIs</li><li>Integrations</li></ul>
+            </article>
+
+            <article class="skill reveal">
+              <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="1.5" /><rect x="3" y="14" width="18" height="6" rx="1.5" /><path d="M7 7h.01M7 17h.01" /></svg>
+              <h3>Deployment &amp; servers</h3>
+              <p>
+                Deploying and maintaining apps on Ubuntu with Nginx and
+                Passenger on DigitalOcean, across production and staging.
+              </p>
+              <ul class="skill-tags"><li>Ubuntu</li><li>Nginx</li><li>Passenger</li><li>DigitalOcean</li></ul>
+            </article>
+
+            <article class="skill reveal">
+              <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M14 5l-4 14" /></svg>
+              <h3>Rails &amp; frontend</h3>
+              <p>
+                Rails apps from data models and business logic to the
+                interface, using HTML, CSS, JavaScript and Bootstrap.
+              </p>
+              <ul class="skill-tags"><li>Ruby on Rails</li><li>JavaScript</li><li>Bootstrap</li><li>HTML/CSS</li></ul>
+            </article>
+
+            <article class="skill reveal">
+              <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z" /></svg>
+              <h3>Client communication</h3>
+              <p>
+                I own features end to end and keep international clients
+                updated on progress, so there are no surprises at release.
+              </p>
+              <ul class="skill-tags"><li>Status updates</li><li>Requirements</li><li>English · Urdu</li></ul>
+            </article>
+          </div>
+
+          <div class="ai-note reveal">
+            <h3>AI-assisted, human-reviewed</h3>
+            <p>
+              I use Claude to analyze codebases, plan tasks, implement changes
+              and review code through GitHub. It speeds delivery, but testing and
+              the final judgment on quality stay with me. I also automate
+              workflows with Make.com.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section class="section" id="process">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="kicker">How I work</p>
+            <h2>From requirement to release, with you in the loop.</h2>
+          </header>
+          <ol class="steps">
+            <li class="reveal">
+              <span class="step-num">01</span>
+              <h3>Understand</h3>
+              <p>Clarify the requirement and read the existing code before changing it.</p>
+            </li>
+            <li class="reveal">
+              <span class="step-num">02</span>
+              <h3>Plan</h3>
+              <p>Break the work into small, reviewable pieces and agree on scope.</p>
+            </li>
+            <li class="reveal">
+              <span class="step-num">03</span>
+              <h3>Build &amp; test</h3>
+              <p>Implement in Rails conventions and test before it goes for review.</p>
+            </li>
+            <li class="reveal">
+              <span class="step-num">04</span>
+              <h3>Review</h3>
+              <p>Code review through GitHub, with fixes made before merge.</p>
+            </li>
+            <li class="reveal">
+              <span class="step-num">05</span>
+              <h3>Deploy &amp; report</h3>
+              <p>Ship to staging and production, then report back clearly.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="section section-tint" id="experience">
+        <div class="container exp-grid">
+          <div class="reveal">
+            <p class="kicker">Experience</p>
+            <h2>Software Engineer, EvolvingBits</h2>
+            <p class="exp-date">May 2024 – Present</p>
+            <ul class="check-list">
+              <li>Build and maintain Rails applications from data models and business logic to the interface.</li>
+              <li>Develop dictionary search with text normalization and PostgreSQL trigram matching.</li>
+              <li>Design and optimize PostgreSQL and MySQL databases and keep data in sync between apps.</li>
+              <li>Build REST APIs, integrate third-party services and run Sidekiq background jobs.</li>
+              <li>Deploy and maintain apps on Ubuntu with Nginx and Passenger on DigitalOcean.</li>
+              <li>Own features end to end and keep international clients updated.</li>
+            </ul>
+          </div>
+
+          <aside class="exp-side reveal" aria-label="Education and more">
+            <div class="side-block">
+              <h3>Education</h3>
+              <p><strong>BS Economics</strong><br />University of Education, 2025</p>
+            </div>
+            <div class="side-block">
+              <h3>Certification</h3>
+              <p><strong>AI Automation with Make.com</strong><br />atomcamp, SoftTech'26</p>
+            </div>
+            <div class="side-block">
+              <h3>Languages</h3>
+              <p>English, Urdu</p>
+            </div>
+            <div class="side-block">
+              <h3>Tools</h3>
+              <p>Git, GitHub, Linux, Claude</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section contact" id="contact">
+        <div class="container contact-grid">
+          <div class="reveal">
+            <p class="kicker kicker-light">Contact</p>
+            <h2>Have a Rails project that needs a steady backend hand?</h2>
+            <p class="section-intro">
+              Tell me what you are building and where it hurts, whether that is
+              slow search, a messy database or a deployment that needs care.
+            </p>
+            <a class="btn btn-light" href="mailto:umaryousaf123456@gmail.com">
+              umaryousaf123456@gmail.com
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+          </div>
+
+          <ul class="contact-links reveal">
+            <li>
+              <a href="mailto:umaryousaf123456@gmail.com">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg>
+                <span><small>Email</small>umaryousaf123456@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/muhammad-umar-muavia" target="_blank" rel="noopener">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" /></svg>
+                <span><small>LinkedIn</small>muhammad-umar-muavia</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/umarmuavia02" target="_blank" rel="noopener">
+                <svg class="icon icon-fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.4-.5-1.6.2-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.9.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3" /></svg>
+                <span><small>GitHub</small>umarmuavia02</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year">2026</span> Muhammad Umar Muavia. Built by hand with HTML, CSS and JavaScript.</p>
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
